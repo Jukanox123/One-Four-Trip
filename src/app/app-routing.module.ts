@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -10,27 +9,6 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'accueilmvp',
-    pathMatch: 'full'
-  },
-  {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },
-  {
-    path: 'registration',
-    loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
-=======
-import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: '',
-    redirectTo: 'index',
     pathMatch: 'full'
   },
   {
@@ -52,10 +30,10 @@ const routes: Routes = [
   {
     path: 'index',
     loadChildren: () => import('./index/index.module').then( m => m.IndexPageModule)
-  },  {
+  },
+  {
     path: 'contact',
     loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
->>>>>>> 5c922a276126e9f9b686aaef4cefaa21aa8b8a3b
   },
   {
     path: 'restaurant',
@@ -69,17 +47,13 @@ const routes: Routes = [
     path: 'user',
     loadChildren: () => import('./user/user.module').then( m => m.UserPageModule)
   },
-<<<<<<< HEAD
   {
     path: 'accueilmvp',
     loadChildren: () => import('./accueilmvp/accueilmvp.module').then( m => m.AccueilmvpPageModule)
   },
 
 ];
-=======
->>>>>>> 5c922a276126e9f9b686aaef4cefaa21aa8b8a3b
 
-];
 
 @NgModule({
   imports: [
