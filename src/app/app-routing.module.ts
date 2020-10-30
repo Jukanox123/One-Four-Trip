@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'index',
+    redirectTo: 'accueilmvp',
     pathMatch: 'full'
   },
   {
@@ -30,9 +30,24 @@ const routes: Routes = [
   {
     path: 'index',
     loadChildren: () => import('./index/index.module').then( m => m.IndexPageModule)
-  },  {
+  },
+  {
     path: 'message',
     loadChildren: () => import('./message/message.module').then( m => m.MessagePageModule)
+  },
+
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'registration',
+    loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
   },
   {
     path: 'message2',
@@ -46,8 +61,29 @@ const routes: Routes = [
     path: 'message3',
     loadChildren: () => import('./message3/message3.module').then( m => m.Message3PageModule)
   },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+  },
+  {
+    path: 'restaurant',
+    loadChildren: () => import('./restaurant/restaurant.module').then( m => m.RestaurantPageModule)
+  },
+  {
+    path: 'location',
+    loadChildren: () => import('./location/location.module').then( m => m.LocationPageModule)
+  },
+  {
+    path: 'user',
+    loadChildren: () => import('./user/user.module').then( m => m.UserPageModule)
+  },
+  {
+    path: 'accueilmvp',
+    loadChildren: () => import('./accueilmvp/accueilmvp.module').then( m => m.AccueilmvpPageModule)
+  },
 
 ];
+
 
 @NgModule({
   imports: [

@@ -1,0 +1,43 @@
+ion-content {
+    --ion-background-color : #303C39;
+}
+
+.logo {
+    color: white;
+    font-size: 100px;
+    margin-top: 30px;
+}
+
+h1{
+    color: white;
+    font-size: 22px;
+    font-family: 'Founders-Grotesk-Regular';
+}
+
+.button-list {
+    margin: 0 28px 0 28px;
+}
+
+ion-button {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Founders-Grotesk-Semibold';
+    --ion-color-contrast: #303C39 !important;
+    height: 91.54px;
+    width: 314px;
+    margin-top: 34.5px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+ion-tabs ion-icon{
+    color: #69B799;
+}
+
+ion-tab-bar {
+    border-radius: 10px;
+    margin: 0 25px 0 25px;
+}
