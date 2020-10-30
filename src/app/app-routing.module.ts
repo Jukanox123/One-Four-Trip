@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'index',
+    redirectTo: 'accueilmvp',
     pathMatch: 'full'
   },
   {
@@ -31,6 +31,11 @@ const routes: Routes = [
     path: 'index',
     loadChildren: () => import('./index/index.module').then( m => m.IndexPageModule)
   },
+  {
+    path: 'accueilmvp',
+    loadChildren: () => import('./accueilmvp/accueilmvp.module').then( m => m.AccueilmvpPageModule)
+  },
+
 ];
 
 @NgModule({
