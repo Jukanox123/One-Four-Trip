@@ -15,7 +15,7 @@
   
     <ion-button color="light" expand="block">Marie</ion-button>
     
-    <ion-button color="light" expand="block">Léa</ion-button>
+    <ion-button [routerLink]="['/message']"  color="light" expand="block">Léa</ion-button>
   </div>
 
 </ion-content>
@@ -23,7 +23,7 @@
 <ion-tabs>
   <ion-tab-bar slot="bottom">
     
-    <ion-tab-button tab="home">
+    <ion-tab-button [routerLink]="['/accueilmvp']" tab="home">
       <ion-icon name="book"></ion-icon>
     </ion-tab-button>
     
