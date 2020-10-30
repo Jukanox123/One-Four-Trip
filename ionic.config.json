@@ -1,5 +1,7 @@
 {
   "name": "one-4-trip",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

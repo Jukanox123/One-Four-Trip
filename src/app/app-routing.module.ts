@@ -30,7 +30,23 @@ const routes: Routes = [
   {
     path: 'index',
     loadChildren: () => import('./index/index.module').then( m => m.IndexPageModule)
+  },  {
+    path: 'message',
+    loadChildren: () => import('./message/message.module').then( m => m.MessagePageModule)
   },
+  {
+    path: 'message2',
+    loadChildren: () => import('./message2/message2.module').then( m => m.Message2PageModule)
+  },
+  {
+    path: 'message1',
+    loadChildren: () => import('./message1/message1.module').then( m => m.Message1PageModule)
+  },
+  {
+    path: 'message3',
+    loadChildren: () => import('./message3/message3.module').then( m => m.Message3PageModule)
+  },
+
 ];
 
 @NgModule({

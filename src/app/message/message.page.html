@@ -1,0 +1,47 @@
+
+<ion-page class="body">
+  <div class="header-chat">
+    <div class="header-chat-div">
+      <ion-icon [routerLink]="['/accueilmvp']" name="caret-back-outline" class="arrow-left"></ion-icon>
+    </div>
+    <div class="header-chat-div">
+      <ion-icon name="person-circle-outline" class="user-icon"></ion-icon>
+      <p class="user-name">Léa</p>
+    </div>
+    <div class="header-chat-div">
+      
+    </div>
+  </div>
+  <div class="separation"></div>
+  <div class="messages">
+    <div class="line" id="msg1">
+      <div class="separator-2"></div>
+      <div class="chat-box right-msg">
+        <p>Salut ! On va au café ? :p</p>
+      </div>
+    </div>
+    
+    <div class="line" id="msg2">
+      <div class="chat-box left-msg">
+        <p>Salut ! On se retrouve là bas à 13h</p>
+      </div>
+      <div class="separator-2">
+  
+      </div>  
+    </div>
+   
+    <div class="line" id="msg3">
+      <div class="separator-2"></div>
+      <div class="chat-box right-msg">
+        <p>Super à tout à l'heure</p>
+      </div>
+    </div>
+  
+  </div>
+</ion-page>
+
+<ion-footer class="footer">
+  <ion-icon name="camera-outline" class="icon-1"></ion-icon>
+  <ion-input class="input"></ion-input>
+  <ion-icon [routerLink]="['/message1']" name="arrow-up-circle-outline" class="icon-2"></ion-icon>
+</ion-footer>
